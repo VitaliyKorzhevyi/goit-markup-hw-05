@@ -681,7 +681,8 @@ h3 {
   color: var(--overlay-text-color);
 }
 
-.info-wrapper:hover .info-overlay {
+.info-wrapper:hover .info-overlay,
+.info-wrapper:focus .info-overlay {
   transform: translateY(0);
 }
 
