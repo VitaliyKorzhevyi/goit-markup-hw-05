@@ -627,11 +627,6 @@ h3 {
   transition: box-shadow var(--time-hover) var(--cubic-function);
 }
 
-.main-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .main-title {
   font-weight: 700;
   font-size: 18px;
@@ -653,6 +648,15 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.main-item {
+  transition: box-shadow var(--time-hover) var(--cubic-function);
+}
+
+.main-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* overlay */
@@ -681,8 +685,8 @@ h3 {
   color: var(--overlay-text-color);
 }
 
-.info-wrapper:hover .info-overlay,
-.info-wrapper:focus .info-overlay {
+.portfolio-link:hover .info-overlay,
+.portfolio-link:focus .info-overlay {
   transform: translateY(0);
 }
 
@@ -743,4 +747,3 @@ h3 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
-
